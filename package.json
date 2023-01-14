@@ -1,0 +1,57 @@
+{
+  "name": "template-creator-next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 NODE_EXTRA_CA_CERTS='gcaserver.crt' node server.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "@types/node": "18.11.9",
+    "@types/react-dom": "18.0.8",
+    "classnames": "^2.3.2",
+    "express": "^4.18.2",
+    "express-actuator": "^1.8.2",
+    "lodash": "^4.17.21",
+    "mui-datatables": "^4.3.0",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.41.3",
+    "rxjs": "^7.5.7",
+    "sass": "^1.56.1",
+    "swr": "^1.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn format"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.2",
+    "typescript": "^4.8.4"
+  }
+}
