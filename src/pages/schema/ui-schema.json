@@ -1,0 +1,32 @@
+{
+  "firstName": {
+    "ui:autofocus": true,
+    "ui:emptyValue": ""
+  },
+  "selectTest": {
+    "ui:widget": "material-multiselect",
+    "mui:inputProps": {
+      "className": "money"
+    }
+  },
+  "react-select": {
+    "ui:widget": "material-select",
+    "ui:isClearable": true,
+    "ui:placeholder": "Example Placeholder"
+  },
+  "age": {
+    "ui:widget": "updown",
+    "ui:title": "Age of person",
+    "ui:description": "(earthian year)",
+    "mui:className": "money"
+  },
+  "date": {
+    "ui:activeCompColor": "red",
+    "ui:widget": "alt-datetime"
+  },
+  "telephone": {
+    "ui:options": {
+      "inputType": "tel"
+    }
+  }
+}

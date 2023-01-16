@@ -1,0 +1,67 @@
+{
+  "title": "LSCS_T1",
+  "description": "Fill page and submit",
+  "type": "object",
+  "required": ["patientNumber","patientName","reportDate",
+    "patientHusbandName","patientAge","patientBirthYear","monthOfPregnancy","pregnancyCount"],
+  "properties": {
+    "patientNumber": {
+      "type": "string",
+      "title": "In Patient Number"
+    },
+    "patientName": {
+      "type": "string",
+      "title": "Patient name"
+    },
+    "reportDate": {
+      "type": "material-date",
+      "title": "Report Date"
+    },
+    "patientHusbandName": {
+      "type": "string",
+      "title": "Patient Husband name"
+    },
+    "patientAge": {
+      "type": "integer",
+      "title": "age"
+    },
+    "patientBirthYear": {
+      "type": "string",
+      "title": "Birth Year"
+    },
+    "monthOfPregnancy": {
+      "type": "integer",
+      "title": "Number of month of pregnancy"
+    },
+    "pregnancyCount": {
+      "type": "integer",
+      "title": "Total number pregnancy till today"
+    },
+    "totalNumChild": {
+      "type": "integer",
+      "title": "Total children"
+    },
+    "lastPregnancy": {
+      "type": "string",
+      "title": "Last Pregnancy year"
+    },
+    "hourToPainSeen": {
+      "type": "string",
+      "title": "Hour back Pain started"
+    },
+    "town": {
+      "type": "string",
+      "title": "Town"
+    },
+    "doctorName": {
+      "type": "string",
+      "title": "Doctor Name"
+
+    },
+    "numberOfMarriageYear": {
+      "type": "string",
+      "title": "Number Of Marriage Year",
+      "enum": ["೧ ವಷ೯", "೨ ವಷ೯","೩ ವಷ೯","೪ ತಿಂಗಳು","೫ ತಿಂಗಳು","೬ ತಿಂಗಳು","೭ ತಿಂಗಳು","೮ ತಿಂಗಳು","೯ ತಿಂಗಳು","೧೦ ತಿಂಗಳು","೧೧ ತಿಂಗಳು"]
+    }
+  }
+}

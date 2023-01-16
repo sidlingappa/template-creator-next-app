@@ -15,11 +15,11 @@ export const columns = [
     name: "id",
     options: {
       display: false,
-      searchable:false,
-       filter: false,
-       download: false,
-        print: false,
-        viewColumns: false,
+      searchable: false,
+      filter: false,
+      download: false,
+      print: false,
+      viewColumns: false,
       customBodyRender: (v: any) => {
         const value = v ? v : "";
         return (
@@ -34,8 +34,8 @@ export const columns = [
   {
     label: "Employee Name",
     name: "empName",
-      searchable:true,
-                     filter: true,
+    searchable: true,
+    filter: true,
     options: {
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toUpperCase()) : "";
@@ -52,8 +52,8 @@ export const columns = [
     label: "Employee Id",
     name: "employeeId",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -73,8 +73,8 @@ export const columns = [
     label: "Nationality",
     name: "nationality",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -94,8 +94,8 @@ export const columns = [
     label: "Citizenship",
     name: "citizenship",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -115,8 +115,8 @@ export const columns = [
     label: "Week Day Off",
     name: "weekDayOff",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? daysInWeek[v] : "";
         return (
@@ -136,8 +136,8 @@ export const columns = [
     label: "Gender",
     name: "gender",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -157,8 +157,8 @@ export const columns = [
     label: "Date of birth",
     name: "dob",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -178,8 +178,8 @@ export const columns = [
     label: "Employee Type",
     name: "empType",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -199,8 +199,8 @@ export const columns = [
     label: "CPF Contribution",
     name: "cpfContribution",
     options: {
-     searchable:true,
-                    filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -220,8 +220,8 @@ export const columns = [
     label: "Work Shift",
     name: "workshift",
     options: {
-     searchable:true,
-                filter: true,
+      searchable: true,
+      filter: true,
       customBodyRender: (v: any) => {
         const value = v ? startCase(v.toLowerCase()) : "";
         return (
@@ -242,11 +242,11 @@ export const columns = [
     name: "error",
     options: {
       display: false,
-           searchable:false,
-            filter: false,
-            download: false,
-             print: false,
-             viewColumns: false,
+      searchable: false,
+      filter: false,
+      download: false,
+      print: false,
+      viewColumns: false,
       customBodyRender: (v: any) => {
         const value = v ? v : "- -";
         return (

@@ -72,18 +72,24 @@ const EmployeeMngt: NextPage & { auth?: boolean } = () => {
     getEmpInfo();
   }, []);
   const toptions = {
-    filterType: 'checkbox',
+    filterType: "checkbox",
   };
-  const search = (searchTerm: string, perPage: number, page: number, filters: any, sort: any) => {
-      setRequest({
-        ...request,
-        limit: perPage,
-        page: page,
-        term: searchTerm,
-        ...(filters && {filters: JSON.stringify(filters)}),
-        ...(sort && {sort: JSON.stringify(sort)})
-      })
-    }
+  const search = (
+    searchTerm: string,
+    perPage: number,
+    page: number,
+    filters: any,
+    sort: any
+  ) => {
+    setRequest({
+      ...request,
+      limit: perPage,
+      page: page,
+      term: searchTerm,
+      ...(filters && { filters: JSON.stringify(filters) }),
+      ...(sort && { sort: JSON.stringify(sort) }),
+    });
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <NavBar></NavBar>
